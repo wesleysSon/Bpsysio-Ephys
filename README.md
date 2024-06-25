@@ -2,8 +2,37 @@
 
 ## Table of contents
 1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Data](#data)
-4. [Models](#models)
-5. [Contributing](#contributing)
-6. [Contact](#contact)
+2. [Data](#data)
+3. [Models](#models)
+4. [Contributing](#contributing)
+5. [Contact](#contact)
+
+## Installation
+
+
+
+
+
+
+## Data
+
+
+
+
+
+
+## Models
+
+
+
+
+
+
+## Contributing
+
+
+
+
+
+
+## Contact
