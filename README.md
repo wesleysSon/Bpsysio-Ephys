@@ -8,7 +8,10 @@
 5. [Contact](#contact)
 
 ## Installation
-
+```bash
+#clone repository
+git clone https://github.com/wesleysSon/Bpsysio-Ephys.git
+```
 
 
 
