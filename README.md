@@ -136,6 +136,7 @@ To use specific parameters, find the chuck related to the model where you want t
 ## Contact
 If you encounter any issues accessing the data or have questions regarding the workflow, please feel free to reach out using the contact information provided below.
 \
+\
 Contributer: Wesley
 \
 Linkedin: [Wesley Sontowirono](https://www.linkedin.com/in/wesley-sontowirono-810164165/)
