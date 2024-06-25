@@ -68,7 +68,7 @@ print(data_extracted_features)
 
 To use specific parameters, find the chuck related to the model where you want to change the parameter and change the parameters where the model is initialised. We recommend to use `random_state=0` or `np.random.seed(42)` to retain reproducablity. You can find an example for each model model below with a link to the related scikit-learn page.
 
-1. [KMeans](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
+1. [KMeans](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) \
    Code snippet from workflow where KMeans is initialised
    ```
    kmeans = KMeans(n_clusters=len(data_extracted_features_imputed_combat_categorical[feature].unique()), random_state=0)
@@ -77,7 +77,7 @@ To use specific parameters, find the chuck related to the model where you want t
    ```
    kmeans = KMeans(n_clusters=10, max_iter=300, random_state=0)
    ```
-2. [Linear regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
+2. [Linear regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html) \
    Code snippet from workflow
    ```
    # Initialize the linear regression model
@@ -88,7 +88,7 @@ To use specific parameters, find the chuck related to the model where you want t
    # Initialize the linear regression model
    regr = LinearRegression(fit_intercept=False)
    ```
-3. [Random forest classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+3. [Random forest classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) \
    Code snippet from workflow
    ```
    # Initialize the classifier
@@ -99,7 +99,7 @@ To use specific parameters, find the chuck related to the model where you want t
    # Initialize the classifier
    rf = RandomForestClassifier(n_estimators=250, min_samples_split=2, random_state=0)
    ```
-4. [Random forest regressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html)
+4. [Random forest regressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html) \
    Code snippet from workflow
    ```
    # Initialize the regressor
@@ -110,7 +110,7 @@ To use specific parameters, find the chuck related to the model where you want t
    # Initialize the regressor
    rf = RandomForestRegressor(n_estimators=1000, max_features=1.0, bootstrap=False, random_state=0)
    ```
-5. [Support vector machine](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html#svr)
+5. [Support vector machine](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html#svr) \
    Code snippet from workflow
    ```
    # Initialize the SVR model
@@ -121,7 +121,7 @@ To use specific parameters, find the chuck related to the model where you want t
    # Initialize the SVR model
    svm = SVR(kernel='rbf', C=1.0, degree=3, gamma='scale')
    ```  
-6. [Elastic net regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html)
+6. [Elastic net regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html) \
    Code snippet from workflow
    ```
    regr = ElasticNet(random_state=0)
@@ -131,7 +131,7 @@ To use specific parameters, find the chuck related to the model where you want t
    regr = ElasticNet(alpha=2.0, max_iter=1000, random_state=0)
    ```     
 
-**NOTE:** The plots from elastic net regression will not be saved.
+**NOTE:** The plots from elastic net regression will not be saved. Hyperparameter tuning was done for several models, but were commented out. This process was done with the use of [`GridSearchCV`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html). The validation metrics were worse, but feel free to uncomment it and use it.
 
 ## Contact
 If you encounter any issues accessing the data or have questions regarding the workflow, please feel free to reach out using the contact information provided below.
